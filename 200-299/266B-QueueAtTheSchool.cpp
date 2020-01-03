@@ -9,7 +9,12 @@ int main(){
         int index = numKids - 1;
         while(index >= 0){
             index--;
-            if(q[index] == 'B' && q[index + 1] == 'G'){q[index] = 'G'; q[index + 1] = 'B'; index--;}
+            if(q[index] == 'B' && q[index + 1] == 'G')
+            {
+                q[index] = 'G'; 
+                q[index + 1] = 'B';
+                index--;
+            }
         }
     }
     cout << q << endl;
